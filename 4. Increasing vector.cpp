@@ -30,19 +30,18 @@ int main () {
   }
 
   a = 0; c = 1; d = 1;
-  if (b > abs(f)){
+  if (b > abs(f)) {
     cout << f << " ";
     a++; d++;
   }
     cout << b << " ";
 
-  while (a < vec.size() - 1) {
-    a++;
-    if (vec[e + c] >= b && (vec[e + c]) < (abs(vec[e - d]))) {
+  for (int i = a; i < vec.size() - 1; ++i) {
+    if ((vec[e + c] >= b) && (vec[e + c] < abs(vec[e - d]))) {
       cout << vec[e + c] << " ";
       b = vec[e + c]; c++;
     }
-    else if ((abs(vec[e - d]) >= b)) {
+    else if (abs(vec[e - d]) >= b) {
       cout << vec[e - d] << " ";
       b = abs(vec[e - d]); d++;
     }
@@ -52,7 +51,3 @@ int main () {
     }
   }
 }
-
-
-/*
-*/
