@@ -5,15 +5,20 @@ using namespace std;
 
 int main () {
 
-  int a = 0, b = 0, c = 0, d = 0, e = 0, f = 0;
+  int a = 0, b = -1, c = 0, d = 0, e = 0, f = 0;
   vector <int> vec (0);
 
   while (a != -1) {
     cout << "Enter vector: " << endl;
     cin >> a;
     if (a != -1) {
-      vec.push_back(a);
-      b = a;
+      if (b < abs(a) || b = -1) {
+        b = a;
+        vec.push_back(a);
+      }
+      else {
+        cerr << "Incorrect input" << endl;
+      }
     }
   }
   cout << endl;
