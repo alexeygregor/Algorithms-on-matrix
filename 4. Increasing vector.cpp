@@ -12,7 +12,7 @@ int main () {
     cout << "Enter vector: " << endl;
     cin >> a;
     if (a != -1) {
-      if (b < abs(a) || b = -1) {
+      if (b < abs(a) || b == -1) {
         b = a;
         vec.push_back(a);
       }
